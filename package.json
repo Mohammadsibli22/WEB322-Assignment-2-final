@@ -1,0 +1,22 @@
+{
+  "name": "web322-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --minify",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "daisyui": "^4.12.24",
+    "tailwindcss": "^3.4.18"
+  },
+  "keywords": [],
+  "author": "",
+  "description": ""
+}

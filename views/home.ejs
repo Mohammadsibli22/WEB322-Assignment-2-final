@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <%- include('partials/navbar', { page: "/" }) %>
+
+  <div class="container mx-auto p-4">
+    <div class="hero bg-base-200 rounded-xl">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Explore Climate Solutions</h1>
+          <p class="py-6">Browse projects by sector and dive into details for each solution.</p>
+          <a class="btn btn-primary" href="/solutions/projects">View Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 hard-coded featured cards (pick real ids from your data) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <% [1,2,3].forEach(id => { %>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="https://picsum.photos/800/450?random=<%= id %>" alt="Project <%= id %>" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Featured Project #<%= id %></h2>
+            <p>Quick look at a dataset project.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-secondary" href="/solutions/projects/<%= id %>">Details</a>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>

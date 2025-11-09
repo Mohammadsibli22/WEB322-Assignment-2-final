@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+...
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <%- include('partials/navbar', { page: "/about" }) %>
+  <div class="container mx-auto p-4">
+    <div class="hero bg-base-200 rounded-xl">
+      <div class="hero-content">
+        <div>
+          <h1 class="text-5xl font-bold">About</h1>
+          <p class="py-6">All about this project and the student behind it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <img class="rounded-xl shadow" src="https://picsum.photos/900/600" alt="About" />
+
+
+
+      <div class="prose">
+        <h2 class="text-2xl font-bold">Hi! 👋</h2>
+        <p>I’m exploring sustainable tech solutions and building web apps. This site uses the A1 dataset.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
